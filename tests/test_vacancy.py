@@ -1,5 +1,6 @@
 import pytest
 
+import src
 from src.vacancy import Vacancy
 
 
