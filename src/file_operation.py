@@ -45,7 +45,7 @@ class FileOperation(FileChange):
 
         with open(
             os.path.join(DATA_DIR, self.__filename + ".vac"),
-            "w",
+            "a",
             encoding="utf-8",
         ) as f:
             json.dump(data_list, f, ensure_ascii=False, indent=4)
@@ -73,7 +73,7 @@ class FileOperation(FileChange):
 
         with open(
             os.path.join(selected_file),
-            "w",
+            "a",
             encoding="utf-8",
         ) as f:
             json.dump(save_list, f, ensure_ascii=False, indent=4)

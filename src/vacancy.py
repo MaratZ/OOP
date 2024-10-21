@@ -135,3 +135,20 @@ class Vacancy(VacansABS):
         if isinstance(other, Vacancy) is True:
             return self.salary_from < other.salary_from
         raise TypeError("сравнению подлежат элементы класса Vacancy")
+
+    def validate__(self):
+        """Валидация отображения ЗП по признаку отсутствия информации или цифр в графе ЗП от или до"""
+        if not self.salary:
+            self.salary_from = 0
+            self.salary_to = 0
+            return
+
+        if not self.salary["from"]:
+            self.salary_from = 0
+        else:
+            self.salary_from = self.salary["from"]
+
+        if not self.salary["to"]:
+            self.salary_to = 0
+        else:
+            self.salary_to = self.salary["to"]
