@@ -5,11 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5147fcd2-07ea-4063-9de0-e2299aa19c23" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/hh_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/confitest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_file_worker.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/file_operation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/file_operation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/get_data_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/get_data_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/interaction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/log_dir.file" beforeDir="false" afterPath="$PROJECT_DIR$/src/file_worker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/vacancies.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/vacancies.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/file_operation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/get_data_api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interaction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vacancy.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vacancy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_vacancy.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_vacancy.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +67,7 @@
   }
 }</component>
   <component name="RunManager" selected="Python.main">
-    <configuration name="get_data_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="hh_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="OOP Course4" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -71,7 +80,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/get_data_api.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\домашний\AppData\Roaming\Python\Scripts\OOP Course4\src\hh_api.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -105,7 +114,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.get_data_api" />
+        <item itemvalue="Python.hh_api" />
       </list>
     </recent_temporary>
   </component>

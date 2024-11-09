@@ -7,5 +7,5 @@ ROOT_DIR = os.path.dirname(__file__)
 DATA_DIR = os.path.join(ROOT_DIR, "data")
 
 #Создаем путь до файла vacancies.json относительно текущей директории.
-REL_JSON_DIR = os.path.join(DATA_DIR, "https://github.com/MaratZ/OOP/tree/feature/data/vacancies.json")
+REL_JSON_DIR = os.path.join(DATA_DIR, "../data/vacancies.json")
 JSON_DIR = os.path.abspath(REL_JSON_DIR)
