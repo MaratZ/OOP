@@ -5,19 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5147fcd2-07ea-4063-9de0-e2299aa19c23" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/hh_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/confitest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_file_worker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/log_dir.file" beforeDir="false" afterPath="$PROJECT_DIR$/src/file_worker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/vacancies.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/vacancies.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/file_operation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/get_data_api.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interaction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/file_worker.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/file_worker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hh_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/hh_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/vacancy.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vacancy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/confitest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/confitest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_file_worker.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_file_worker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_vacancy.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_vacancy.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
