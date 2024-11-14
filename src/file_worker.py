@@ -85,15 +85,7 @@ class FileOperation(FileChange):
 
         return data_list
 
-    def write_file(self, data_list: list):  # type: ignore
-        """Метод для записи списка данных в файл."""
 
-        with open(
-            os.path.join(DATA_DIR, self.__filename + ".vac"),
-            "a",
-            encoding="utf-8",
-        ) as f:
-            json.dump(data_list, f, ensure_ascii=False, indent=4)
 
     def delete_by_id(self, id_list: list):
         data_list = self.load_file()

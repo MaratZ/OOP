@@ -1,7 +1,7 @@
 from src.file_worker import JSONSaver
 from src.hh_api import HeadHunterAPI
 from src.utils import VacanciesFilterSort
-
+from accessify import private, protected
 
 
 # Функция для взаимодействия с пользователем
