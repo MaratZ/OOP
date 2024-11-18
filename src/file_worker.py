@@ -74,7 +74,7 @@ class FileOperation(FileChange):
                     "alternate_url": Vacancy(i).link,
                 }
             )
-        with open(self.filename, "w", encoding="utf-8") as f:
+        with open(self.filename, "a+", encoding="utf-8") as f:
             json.dump(vacs_list, f, ensure_ascii=False, indent=4)
 
     def load_file(self):
@@ -214,6 +214,9 @@ class JSONSaver(BaseFileReader):
         """
         Функция для записи списка вакансий в файл. Принимает список объектов класса Vacancy.
         """
+        with open(self.filename, "r", encoding="UTF-8") as f:
+            vacs = json.load(f)
+
         vacs_list = []
         for i in vacs_obj:
             vacs_list.append(
@@ -229,8 +232,10 @@ class JSONSaver(BaseFileReader):
                     "alternate_url": Vacancy(i).link,
                 }
             )
+        vacs.extend(vacs_list)
         with open(self.filename, "w", encoding="utf-8") as f:
-            json.dump(vacs_list, f, ensure_ascii=False, indent=4)
+            json.dump(vacs, f, ensure_ascii=False, indent=4)
+
 
     def add_vacancy(self, vacancy):
         pass

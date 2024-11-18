@@ -4,47 +4,60 @@ class Vacancy:
     """
 
     __slots__ = (
+        "vacancy_data",
         "__name",
         "__salary_from",
         "__salary_to",
         "__description",
         "__city",
         "__link",
-    )
+            )
 
     def __init__(self, vacancy):
-        self.__name = (
-            vacancy["name"] if vacancy["name"] else "Название вакансии не указано"
-        )
+        self.vacancy_data = vacancy
+        self.__name = None
+        self.__salary_from = None
+        self.__salary_to = None
+        self.__description = None
+        self.__city = None
+        self.__link = None
+        self.__validate()
 
-        self.__salary_from = (
-            vacancy["salary"]["from"]
-            if vacancy["salary"] and vacancy["salary"]["from"]
-            else 0
-        )
-        self.__salary_to = (
-            vacancy["salary"]["to"]
-            if vacancy["salary"] and vacancy["salary"]["to"]
-            else 0
-        )
+    def __validate(self):
+        if self.vacancy_data["name"]:
+            self.__name = self.vacancy_data["name"]
+        else:
+            self.__name = "Название вакансии не указано"
 
-        self.__description = (
-            vacancy["snippet"]["responsibility"]
-            if vacancy["snippet"] and vacancy["snippet"]["responsibility"]
-            else "Описание отсутствует"
-        )
+        if self.vacancy_data["salary"]:
+            if self.vacancy_data["salary"]["from"]:
+                self.__salary_from = self.vacancy_data["salary"]["from"]
+            else:
+                self.__salary_from = 0
 
-        self.__city = (
-            vacancy["area"]["name"]
-            if vacancy["area"] and vacancy["area"]["name"]
-            else "Город не указан"
-        )
+            if self.vacancy_data["salary"]["to"]:
+                self.__salary_to = self.vacancy_data["salary"]["to"]
+            else:
+                self.__salary_to = 0
+        else:
+            self.__salary_from = 0
+            self.__salary_to = 0
 
-        self.__link = (
-            vacancy["alternate_url"]
-            if vacancy["alternate_url"]
-            else "Ссылка не указана"
-        )
+        if self.vacancy_data["snippet"]["responsibility"]:
+            self.__description = self.vacancy_data["snippet"]["responsibility"]
+        else:
+            self.__description = "Описание отсутствует"
+
+        if self.vacancy_data["area"]["name"]:
+            self.__city = self.vacancy_data["area"]["name"]
+        else:
+            self.__city = "Город не указан"
+
+        if self.vacancy_data["alternate_url"]:
+            self.__link = self.vacancy_data["alternate_url"]
+        else:
+            self.__link = "Ссылка не указана"
+
 
     @property
     def name(self):
@@ -112,3 +125,5 @@ if __name__ == "__main__":
     print(x)
     y = Vacancy(vacancy2)
     print(y)
+
+    print(x>y)
